@@ -1,0 +1,355 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    padding: 0;
+    overflow-x: hidden;
+}
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/book-library-with-open-textbook.jpg) center;
+    background-size: cover;
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+}
+nav ul li a.active{
+    color: #111;
+    background: red;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding-top: 25px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #706fd3;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #40407a;
+    transition: .3s;
+}
+.navbar_toggle{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+
+}
+header{
+    height: 190px;
+    width: 100%;
+}
+.logo{
+    margin: auto;
+}
+#contact {
+    margin: auto;
+    text-decoration: none;
+    color: #706fd3;
+    padding: 10px 13px;
+    border-radius: 1.375rem;
+    border: 2px solid #706fd3;
+    
+}
+#contact:hover{
+    color: #40407a;
+    background: #706fd3;
+
+}
+.sticky{
+    overflow: hidden;
+    z-index: 1000;
+    background-color: #111;
+    height: 135px;
+   
+}
+
+.hero .container {
+    color: #f7f1e3;
+    margin: 3rem;
+    text-align: center;
+}
+.hero .container p{
+    margin-bottom: 3rem;
+}
+.hero .container h1{
+    margin-bottom: 2rem;
+}
+.navbar_toggle{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #706fd3;
+
+
+}
+@media (max-width:768px){
+    .navbar_toggle{
+        display: block;
+        margin-right: 150px;
+    }
+    .navbar_toggle.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .navbar_toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        
+    }
+    .navbar_toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+    .menu{
+        position: fixed;
+        left: -141%;
+        top: 85px;
+        display: flex;
+       background-color: #a1a0e5;
+       flex-direction: column; 
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        font-size: 20px;
+    }
+    .item{
+        margin: 16px 0;
+        
+    }
+    .menu.active{
+        left: 0;
+    }
+    nav ul li a:hover{
+        color: #323e0e;
+        transition: .3s;
+}
+}
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .wrapper{
+    display: flex;
+}
+footer .wrapper .sec{
+    margin-right: 30px;
+}
+footer .wrapper .sec.aboutUs{
+    width: 40%;
+}
+footer .wrapper h2{
+    position: relative;
+    color: #fff;
+    margin-bottom: 15px;
+}
+footer .wrapper h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #706fd3;
+}
+footer h3{
+    color: #999;
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li{
+    list-style: none;
+}
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% -60px);
+    margin-right: 0 !important;
+}
+.contact .information{
+    position: relative;
+}
+.contact .information li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .information li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.contact .information li span{
+    color: #999;
+}
+.contact .information li  a{
+    color: #999;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2px;
+}
+.contact .information li a:hover{
+    color: #fff;
+}
+.copyrighText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .wrapper{
+        flex-direction: column;
+    }
+    footer .wrapper .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .wrapper,
+    .quickLinks{
+        width:100%;
+    }
+    .copyrighText{
+        padding: 8px 40px;
+    }
+}
+/* cv */
+.container span{
+    font-size: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 15px;
+}
+.container .education{
+    margin-bottom: 20px;
+}
+.education ul {
+    list-style: none;
+}
+.certification ul{
+    list-style: none;
+}
+
+/* courses */
+.course{
+    margin: 2rem auto;
+    background: #fff;
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    border-radius: 12px;
+    padding: 35px 40px;
+}
+.course h1{
+    color: #706fd3;
+    margin: 25px;
+}
+.course .fa{
+ font-size: 10px;
+}
+.course .row{
+    display: flex;
+}
+.course .row .primary{
+    margin: auto;
+}
+.course .row ul{
+    list-style: none;
+    padding: 20px;
+}
+.course .row ul li{
+    padding: 5px;
+}
+
+.course .row article:hover{
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
+	-moz-box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
+	box-shadow: 0px 0px 7px 0px rgba(214,214,214,1);
+	transform: scale(1.1);
+    transition: all 0.3s ease;
+ 
+}
+/* contact */
+
+.contact-form{
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    height: 70%;
+    width: 50%;
+}
+textarea{
+    resize: none;
+}
+.contact-form:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(32, 60, 219, 0.25);
+    border-radius: 15px;
+}
+.contact__form a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f7f1e3;
+    border: 2px solid #706fd3;
+    border-radius: 20px;
+    padding: 13px 20px;
+    background: #706fd3;
+}
+.contact__form a:hover{
+    border:2px solid #f7f1e3;
+    transition: .3s;
+    color: #706fd3;
+    background: #f7f1e3;
+}
+@media (max-width: 640px){
+.course .row{
+    display: inline-block;
+ 
+    }
+}
+
